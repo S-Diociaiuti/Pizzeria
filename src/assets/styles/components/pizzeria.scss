@@ -1,0 +1,138 @@
+@import "../variables.scss";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+.header{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: $my-white;
+    img{
+        display: flex;
+        width: 100px;
+        height: 100px;
+    }
+}
+.banner {
+    img{
+        width: 100%;
+        height: 25vh;
+        margin-top: 90px;
+    }
+}
+.title{
+    color: $my-white;
+    height: 125px;
+    
+}
+.forms{
+    display: flex;
+    justify-content: space-between;
+    height: 635px;
+    .lista-pizze{
+        margin-left: 90px;
+        background-color: $my-white;
+        border-radius: 10px;
+        box-shadow: $my-white 0px 22px 70px 4px;
+        width: 35%;
+        align-items: center;
+        height: 90%;
+        ul{
+            li{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                justify-content: flex-start;
+                max-height: 90px;
+                img{
+                    width: 100px;
+                    height: 90px;
+                }
+                .pizza{
+                    border-bottom: 1px solid #ccc;
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    .pizza-name{
+                        max-height: 5px;
+                    }
+                    h5{
+                        max-height: 5px;
+                        .pizza-ingredients{
+                            font-style: italic;
+                            font-weight: normal;
+                        }
+                    }
+                    .price{
+                        
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+    .form{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-right: 90px;
+        background-color: $my-white;
+        border-radius: 10px;
+        box-shadow: $my-white 0px 22px 70px 4px;
+        width: 35%;
+        height: 90%;
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            div{
+                margin-top: 10px;
+                margin-left: 80px;
+                label{
+                    display: flex;
+                    justify-content: flex-start;
+                    gap: 3px;
+                    height: 5px;
+
+                }
+                input{
+                    border-radius: 5px;
+                    width: 360px;
+                }
+            }
+            .form-content{
+                textarea {
+                    display: flex;
+                    justify-content: flex-start;
+                    resize: none;
+                    width: 360px;
+                    height: 50px;
+                }
+            }
+            input{
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                width: 100px;
+            }
+        }
+    }
+}
+footer{
+    background-color: $my-white;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    .follow-us{
+        display: flex;
+        justify-content: space-evenly;
+        i{
+            display: flex;
+            gap: 5px;
+            font-size: 15px;
+        }
+    }
+}
